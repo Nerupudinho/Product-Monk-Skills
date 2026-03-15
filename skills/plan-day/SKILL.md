@@ -104,6 +104,11 @@ Short bullet list of what to do in the gaps between meetings.
 Write (or update) `Tasks/YYYY-MM-DD.md` using the structure below. Use today's date if the file doesn't exist.
 
 ```
+---
+date: YYYY-MM-DD
+status: in-progress
+---
+
 # Tasks - DD Mon YYYY
 
 ## Hard time constraints today
@@ -118,24 +123,24 @@ Write (or update) `Tasks/YYYY-MM-DD.md` using the structure below. Use today's d
 
 ## Overdue
 
-| # | Initiative/Topic | Action Required | Stakeholders | Notes/Priority | Initiative File |
-|---|---|---|---|---|---|
+| - [ ] | # | Initiative/Topic | Action Required | Stakeholders | Notes/Priority | My Updates | Need Clarity | Initiative File |
+|-------|---|---|---|---|---|---|---|---|
 ...
 
 ---
 
 ## Due Today
 
-| # | Initiative/Topic | Action Required | Stakeholders | Notes/Priority | Initiative File |
-|---|---|---|---|---|---|
+| - [ ] | # | Initiative/Topic | Action Required | Stakeholders | Notes/Priority | My Updates | Need Clarity | Initiative File |
+|-------|---|---|---|---|---|---|---|---|
 ...
 
 ---
 
 ## In Progress Initiatives
 
-| # | Initiative/Topic | Action Required | Stakeholders | Notes/Priority | Initiative File |
-|---|---|---|---|---|---|
+| - [ ] | # | Initiative/Topic | Action Required | Stakeholders | Notes/Priority | My Updates | Need Clarity | Initiative File |
+|-------|---|---|---|---|---|---|---|---|
 ...
 
 ---
@@ -148,10 +153,38 @@ Write (or update) `Tasks/YYYY-MM-DD.md` using the structure below. Use today's d
 ```
 
 Rules:
+- Every task row starts with `- [ ]` as the first column — a checkbox Ganesh can tick off.
+- **My Updates** column is always blank when the file is first written — Ganesh fills it in.
+- **Need Clarity** column is always blank when the file is first written — filled in by the AI (see Step 8b).
 - Overdue tasks keep their original row content — do not rewrite them.
 - Do NOT change any task content — only reclassify into the right section.
 - If Overdue is empty, omit the section header.
 - Numbering (#) restarts from 1 within each section.
+
+---
+
+## 8b. Process "My Updates" (run when the task file already has updates)
+
+When reading a task file that has content in the **My Updates** column, do the following for each populated row:
+
+### Step 1 — Propagate to initiative file
+- Identify the initiative file from the **Initiative File** column of that row.
+- Open the initiative file and append the update as a dated note at the bottom under a `## Updates` section (create it if missing):
+  ```
+  **[DD Mon YYYY]:** [Ganesh's update text]
+  ```
+- Do not rewrite or summarise — preserve Ganesh's exact words.
+
+### Step 2 — Populate "Need Clarity"
+- Read the update and the task context (Action Required + Notes/Priority).
+- If anything is ambiguous, incomplete, or raises a question that would affect the next action — write a short, specific question in the **Need Clarity** column of that same row.
+- If the update is fully clear, leave **Need Clarity** blank.
+- Keep questions tight — one question per row maximum.
+
+### Step 3 — Confirm
+After processing all updates, tell Ganesh:
+1. Which initiative files were updated and what was appended
+2. Which rows have a "Need Clarity" question and what it is
 
 ## 9. Generate `Tasks/this-week.md`
 
