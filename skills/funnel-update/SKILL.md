@@ -85,4 +85,4 @@ Do not guess or estimate without clearly labelling it as an estimate.
 After outputting the message, ask:
 > "Should I log this as today's funnel update entry?"
 
-If yes, save it to `Initiatives/Repeat - Initiatives/Funnel Updates/YYYY-MM-DD.md` with the formatted content.
+If yes, save it to `Initiatives/Repeat - Initiatives/Funnel Updates/YYYY-MM-DD.md` with the formatted content. Add frontmatter using the funnel update template in `CLAUDE.md`.

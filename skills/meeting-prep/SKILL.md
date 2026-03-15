@@ -126,3 +126,8 @@ Tell the user:
 1. Where the prep doc was saved
 2. Top 2–3 things to lead with in the meeting
 3. Any open items from `Open Items.md` that this meeting is a good opportunity to close
+
+---
+
+## Quick reference
+- **Frontmatter:** Add to every prep doc created — use the prep doc template in `CLAUDE.md`

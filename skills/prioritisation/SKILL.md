@@ -60,3 +60,4 @@ Process **one task per message** so the user can click or type one option at a t
 - **One task per message**, then wait for user to pick a status.
 - **Status options**: Done | In progress | Pending | Blocked | Deferred | Cancelled.
 - **Then**: get today's date as YYYY-MM-DD; same date → update that file; different → create new `Tasks/YYYY-MM-DD.md`. **When writing the file, apply** `.cursor/rules/prioritization.mdc` (framework, categories, format).
+- **Frontmatter:** Add to every task file created or edited — use the task file template in `CLAUDE.md`

@@ -126,3 +126,4 @@ After writing, tell the user:
 - One meeting = one file (named by topic + date)
 - Always check and update related initiative files after recording
 - Action items get a `- [ ] [Owner]:` prefix for easy tracking
+- **Frontmatter:** Add to every file created or edited — use the meeting template in `CLAUDE.md`

@@ -60,3 +60,4 @@ Tell the user:
 - User refers to items by number → map to order in Action Items section
 - Name corrections propagate to the whole file and related files
 - One pass, no back-and-forth unless the target file is ambiguous
+- **Frontmatter:** If the file being edited lacks frontmatter, add it before making other changes — use the meeting template in `CLAUDE.md`

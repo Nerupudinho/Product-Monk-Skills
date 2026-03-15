@@ -99,3 +99,4 @@ Tell the user:
 - New question → Open Questions subsection; new action → Ganesh Actions
 - Always update the Last updated date
 - One pass — do all changes in a single edit
+- **Frontmatter:** If `Open Items.md` lacks frontmatter, add it before making other changes — use the initiative file template in `CLAUDE.md`

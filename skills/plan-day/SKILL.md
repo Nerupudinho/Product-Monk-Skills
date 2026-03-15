@@ -237,3 +237,4 @@ Rules:
 - Recurring meetings guide: apply from this skill's table — do not ask Ganesh about known recurring meetings
 - Output: calendar table + focus blocks + today task file (3 sections) + this-week.md + next-week.md
 - Overdue = deferred date has passed | Due Today = in-progress today + deferred-to-today + top-priority actions | In Progress = everything else
+- **Frontmatter:** Add to every file written — use the task file template in `CLAUDE.md`
